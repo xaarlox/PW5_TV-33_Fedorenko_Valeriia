@@ -1,0 +1,173 @@
+.container {
+    min-width: 30rem;
+    max-width: 80rem; 
+    background-color: white;
+    padding: 1.5rem;
+    box-shadow: 0 0 5px darkred;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    margin: 0 auto;
+}
+
+.container h3 {
+    color: darksalmon;
+    margin-bottom: 0.25rem;
+    font-size: 1.25rem;
+}
+
+.container form {
+    margin-bottom: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+    text-align: left;
+}
+
+.form-section-header {
+    grid-column: 1 / span 3;
+    margin: 0.5rem 0;
+}
+
+.form-group select {
+    height: 2.5rem;
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid darkred;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 1.1rem;
+    box-sizing: border-box;
+}
+
+.form-group label {
+    min-height: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+    font-size: 1.1rem;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid darkred;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    box-sizing: border-box;
+}
+
+.container button {
+    padding: 0.8rem 1rem;
+    background-color: darksalmon;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    grid-column: 1 / -1;
+    width: 25%;
+    margin: 0.5rem auto 0;
+    min-width: 160px;
+}
+
+.container button:hover {
+    background-color: salmon;
+}
+
+.results-container {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(85, 107, 47, 0.4);
+}
+
+.result-section {
+    margin-bottom: 2rem;
+}
+
+.result-section h2,
+.result-section h3 {
+    color: darksalmon;
+    margin-bottom: 1rem;
+}
+
+.reliability-conclusion {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background-color: rgb(255, 245, 241);
+    border-left: 5px solid darksalmon;
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+
+.formula-box {
+    background-color: rgb(255, 245, 241);
+    border-left: 5px solid darksalmon;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+}
+
+.formula {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 1.1rem;
+    background-color: #ffffff;
+    padding: 0.75rem;
+    margin-top: 0.5rem;
+    border-radius: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin: 1rem 0;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+th, td {
+    border: 1px solid #e0e0e0;
+    padding: 0.75rem;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+th {
+    background-color: darksalmon;
+    color: white;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+@media screen and (max-width: 768px) {
+    .container form {
+        grid-template-columns: 1fr;
+    }
+    
+    .result-item {
+        font-size: 1.1rem;
+        padding: 0.5rem;
+    }
+
+    table {
+        font-size: 1rem;
+    }
+
+    th, td {
+        padding: 0.5rem;
+        font-size: 1rem;
+    }
+}
